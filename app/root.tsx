@@ -17,6 +17,7 @@ const tabs = [
   { label: "Mes cours", href: "/cours" },
   { label: "Tarifs", href: "/tarifs" },
   { label: "Réservations", href: "/reservation" },
+  { label: "A propos de moi", href: "/about" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -32,7 +33,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <NextUIProvider>
-          <div className="flex flex-col h-screen gap-4 p-4">
+          <div className="flex flex-col h-screen gap-8 p-4">
             <Tabs aria-label="Dynamic tabs" items={tabs} selectedKey={pathname}>
               {(item) => (
                 <Tab key={item.label} title={item.label} href={item.href}>
