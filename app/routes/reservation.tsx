@@ -1,5 +1,11 @@
+import { InlineWidget } from "react-calendly";
+
 const Reservation = () => {
-  return "resa";
+  return (
+    <div>
+      <InlineWidget url="https://calendly.com/monyh" />
+    </div>
+  );
 };
 
 export default Reservation;
